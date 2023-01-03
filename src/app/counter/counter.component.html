@@ -1,0 +1,9 @@
+<p>{{counter$ | async}}</p>
+<p>
+  <button (click)="incrementHandler()">+</button>
+  <button (click)="decrementHandler()">-</button>
+</p>
+<p>
+  <input type="number" #changeNumber>
+  <button (click)="changeHandler(+changeNumber.value)">Change</button>
+</p>
